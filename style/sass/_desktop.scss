@@ -1,0 +1,73 @@
+@import "variables";
+
+@media (min-width: 1300px) {
+  %max-size-shared {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .max-size {
+    @extend %max-size-shared;
+
+    &-header {
+      @extend %max-size-shared;
+      position: relative;
+    }
+  }
+
+  .logo {
+    margin-left: unset;
+    width: 150px;
+  }
+
+  .card {
+    &-primary {
+      padding: 90px 0;
+    }
+    &-secondary {
+      text-align: left;
+      padding: 40px 50px;
+    }
+  }
+
+  .header-right-bg,
+  .header-left-bg {
+    max-width: 100%;
+  }
+
+  .header-text-container {
+    padding-left: 0;
+
+    .title-primary {
+      max-width: 500px;
+    }
+  }
+
+  .header-hr {
+    display: inline-block;
+    width: 150px;
+    border: 0;
+    border-top: 1px solid $neutral-three;
+    padding-bottom: 30px;
+  }
+
+  .title {
+    &-primary,
+    &-secondary {
+      font-size: 66px;
+    }
+    &-lower-section {
+      font-size: 60px;
+      width: 530px !important;
+    }
+  }
+
+  .card-secondary {
+    margin-top: 200px;
+  }
+
+  .lower-section {
+    justify-content: space-around;
+  }
+}
